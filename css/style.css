@@ -8,3 +8,8 @@ body {
   background-color: #000;
   color: #fff
 }
+
+.header {
+  font-smooth: never;
+  text-align: center;
+}
