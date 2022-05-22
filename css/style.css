@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'alagard';
-    src: url('assets/alagard.ttf');
+    src: url('/assets/alagard.woff2');
 }
 
 body {
