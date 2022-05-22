@@ -3,13 +3,74 @@
     src: url('/assets/alagard.woff2');
 }
 
+img {
+  max-width: 80%;
+}
+
 body {
   font-family: alagard;
   background-color: #000;
   color: #fff
 }
 
+p {
+  text-align: center;
+}
+
 .header {
   font-smooth: never;
   text-align: center;
+}
+
+.fadeinpage {
+  animation: fadeIn ease 10s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.mainstuff {
+  text-align: center;
+  position: relative; left: 0; top: 0;
+}
+
+.guy {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.icon1 {
+  position: absolute;
+  top: 70%;
+  left: 30%;
+  max-width: 10%;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+}
+
+.icon2 {
+  position: absolute;
+  top: 70%;
+  left: 45%;
+  max-width: 10%;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+}
+
+.icon3 {
+  position: absolute;
+  top: 70%;
+  left: 60%;
+  max-width: 10%;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+}
+
+@keyframes fadeIn{
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
 }
