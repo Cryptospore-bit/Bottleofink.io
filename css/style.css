@@ -5,6 +5,7 @@
 
 * {
   font-smooth: never;
+  font-family: alagard;
 }
 
 img {
@@ -12,7 +13,6 @@ img {
 }
 
 body {
-  font-family: alagard;
   background-color: #000;
   color: #fff
 }
@@ -29,7 +29,8 @@ body {
 
 .mainstuff {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  height: 50em;
 }
 
 .painting {
@@ -39,17 +40,16 @@ body {
   background-repeat: no-repeat;
 }
 
+.painting:active {
+  animation: rotation 2s infinite linear;
+}
+
 .aboutme {
-  padding-left: 3em;
-  padding-top: 5em;
-  text-align: left;
+  align-self: center;
 }
 
 .icons {
-  padding-top: 55%;
-  padding-left: 15%;
   display: grid;
-  align-content: space-evenly;
   grid-auto-flow: column;
 }
 
@@ -58,7 +58,38 @@ body {
   image-rendering: crisp-edges;
   grid-row: 1;
   object-fit: contain;
-  max-height: 50%;
+}
+
+.icons a img:hover {
+  animation: bounce 0.5s infinite;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+    }
+  50% {
+    transform: translateY(-10px);
+    }
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(5deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
 
 footer {
