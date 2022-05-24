@@ -1,10 +1,14 @@
 @font-face {
-    font-family: 'alagard';
-    src: url('/assets/alagard.woff2');
+  font-family: 'alagard';
+  src: url('/assets/alagard.woff2');
+}
+
+* {
+  font-smooth: never;
 }
 
 img {
-  max-width: 80%;
+  max-width: 100%;
 }
 
 body {
@@ -13,12 +17,7 @@ body {
   color: #fff
 }
 
-p {
-  text-align: center;
-}
-
 .header {
-  font-smooth: never;
   text-align: center;
 }
 
@@ -29,41 +28,46 @@ p {
 }
 
 .mainstuff {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.painting {
+  background-image: url('/assets/BIGowen.png');
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.aboutme {
+  padding-left: 3em;
+  padding-top: 5em;
+  text-align: left;
+}
+
+.icons {
+  padding-top: 55%;
+  padding-left: 15%;
+  display: grid;
+  align-content: space-evenly;
+  grid-auto-flow: column;
+}
+
+.icons a img {
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  grid-row: 1;
+  object-fit: contain;
+  max-height: 50%;
+}
+
+footer {
+  clear: both;
+  padding-top: 5em;
+}
+
+footer p {
   text-align: center;
-  position: relative; left: 0; top: 0;
-}
-
-.guy {
-  position: relative;
-  top: 0;
-  left: 0;
-}
-
-.icon1 {
-  position: absolute;
-  top: 70%;
-  left: 30%;
-  max-width: 10%;
-  image-rendering: pixelated;
-  image-rendering: crisp-edges;
-}
-
-.icon2 {
-  position: absolute;
-  top: 70%;
-  left: 45%;
-  max-width: 10%;
-  image-rendering: pixelated;
-  image-rendering: crisp-edges;
-}
-
-.icon3 {
-  position: absolute;
-  top: 70%;
-  left: 60%;
-  max-width: 10%;
-  image-rendering: pixelated;
-  image-rendering: crisp-edges;
 }
 
 @keyframes fadeIn{
