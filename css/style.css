@@ -109,3 +109,29 @@ footer p {
     opacity:1;
   }
 }
+
+#resume {
+  text-align: center;
+  max-width 80%
+}
+
+/* portfolio */
+
+#portgrid {
+  --auto-grid-min-size: 16rem;
+  display: grid;
+  /*grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));*/
+  grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+  grid-template-rows: repeat(auto-fill, minmax(16rem, 1fr));
+  grid-gap: 1rem;
+  grid-auto-flow: dense;
+}
+
+#portgrid a img {
+}
+
+#portgrid * {
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+}
